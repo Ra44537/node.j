@@ -1,20 +1,15 @@
 {
-  "name": "spotift",
+  "name": "node4",
   "version": "1.0.0",
-  "description": "This is a spotify clone for for my app",
-  "main": "server.js",
+  "description": "",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "spotify",
-    "music"
-  ],
-  "author": "\"raj\"",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0",
-    "slugify": "^1.6.6"
+    "express": "^4.21.2"
   }
 }

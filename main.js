@@ -1,8 +1,19 @@
-// import {a, b , d} from "./mymodule.js";
-//console.log(a, b , d);
+const { createServer } = require('node:http');
 
-// import obj from "./mymodule.js";
-// console.log(obj);
+const hostname = '127.0.0.1';
+const port = 3000;
 
-const a = require("./mymodule2.js");
-console.log(a);
+app.use(express.static('public'))
+
+
+const server = createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World2');
+});
+ 
+
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
